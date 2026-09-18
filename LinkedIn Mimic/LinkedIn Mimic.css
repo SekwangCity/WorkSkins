@@ -1,0 +1,425 @@
+/* An AO3 skin that mimics the LinkedIn style of posts, profile and chat. Was a pain in the ass to make. */
+
+#workskin .linkedin,
+#workskin .linkedin * {
+  box-sizing: border-box;
+}
+
+#workskin .linkedin {
+  max-width: 560px;
+  margin: 2em auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: rgba(0,0,0,.9);
+  background: #f4f2ee;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+#workskin .linkedin p {
+  margin: 0;
+}
+
+/* PLEASE ONLY EVER USE PFPs THAT ARE PERFECT SQUARES, IT WON'T FIT PROPERLY OTHERWISE!! */
+#workskin .li-avatar,
+#workskin .li-avatar-img {
+  width: 48px;
+  height: 48px;
+}
+
+#workskin .li-avatar.small,
+#workskin .li-avatar-img.small {
+  width: 36px;
+  height: 36px;
+}
+
+#workskin .li-avatar.large,
+#workskin .li-avatar-img.large {
+  width: 96px;
+  height: 96px;
+}
+
+#workskin .li-avatar {
+  display: table;
+  border-radius: 50%;
+  background: #57606a;
+}
+
+#workskin .li-avatar span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.05em;
+}
+
+#workskin .li-avatar.large span {
+  font-size: 1.9em;
+}
+
+#workskin .li-avatar.a {
+  background: #0a66c2;
+}
+
+#workskin .li-avatar.b {
+  background: #7a3e98;
+}
+
+#workskin .li-avatar.c {
+  background: #c3390f;
+}
+
+#workskin .li-avatar.d {
+  background: #00838f;
+}
+
+#workskin .li-avatar.e {
+  background: #915907;
+}
+
+#workskin .li-avatar-img {
+  display: block;
+  border-radius: 50%;
+}
+
+#workskin .li-post,
+#workskin .li-chat,
+#workskin .li-profile {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+#workskin .li-post-head {
+  display: grid;
+  grid-template-columns: 48px 1fr auto;
+  column-gap: 8px;
+  padding: 12px 16px 0;
+}
+
+#workskin .li-post-head p {
+  margin: auto 0;
+}
+
+#workskin .li-name {
+  font-weight: 600;
+  font-size: .95em;
+}
+
+#workskin .li-degree,
+#workskin .li-meta {
+  color: rgba(0,0,0,.6);
+  font-size: .8em;
+}
+
+#workskin .li-headline {
+  color: rgba(0,0,0,.6);
+  font-size: .8em;
+}
+
+#workskin .li-dot {
+  margin: 0 2px;
+}
+
+#workskin .li-more {
+  color: rgba(0,0,0,.6);
+  font-size: 1.2em;
+  text-align: right;
+}
+
+#workskin .li-post-body {
+  padding: 8px 16px 12px;
+  font-size: .95em;
+  line-height: 1.4;
+}
+
+#workskin .li-post-media img {
+  width: 100%;
+  display: block;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+#workskin .li-post-stats {
+  padding: 8px 16px;
+  font-size: .8em;
+  color: rgba(0,0,0,.6);
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+#workskin .li-reacts {
+  letter-spacing: -2px;
+}
+
+#workskin .li-sep {
+  margin: 0 2px;
+}
+
+#workskin .li-post-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 4px 8px;
+}
+
+#workskin .li-action {
+  text-align: center;
+  padding: 8px 0;
+  font-weight: 600;
+  font-size: .85em;
+  color: rgba(0,0,0,.6);
+}
+
+#workskin .li-comment {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  column-gap: 8px;
+  padding: 8px 16px 12px;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+#workskin .li-comment p {
+  margin: auto 0;
+}
+
+#workskin .li-comment p:last-child {
+  background: #f2f2f2;
+  border-radius: 16px;
+  padding: 8px 12px;
+  font-size: .85em;
+}
+
+#workskin .li-chat-head {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  column-gap: 8px;
+  padding: 10px 16px;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+#workskin .li-chat-head p {
+  margin: auto 0;
+}
+
+#workskin .li-status {
+  font-size: .75em;
+  color: rgba(0,0,0,.55);
+  display: block;
+}
+
+#workskin .li-status.online::before {
+  content: "\25CF";
+  color: #44712e;
+  font-size: .7em;
+  margin-right: 4px;
+}
+
+#workskin .li-chat-body {
+  padding: 14px 16px;
+}
+
+#workskin .li-chat-body::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#workskin .li-msg {
+  margin: 8px 0;
+  max-width: 80%;
+  clear: both;
+}
+
+#workskin .li-msg p {
+  padding: 8px 12px;
+  border-radius: 16px;
+  font-size: .85em;
+  line-height: 1.4;
+  margin: 0;
+  display: inline-block;
+  word-wrap: break-word;
+}
+
+#workskin .li-msg.received {
+  float: left;
+}
+
+#workskin .li-msg.received p {
+  background: #f2f2f2;
+  color: rgba(0,0,0,.9);
+  border-bottom-left-radius: 4px;
+}
+
+#workskin .li-msg.sent {
+  float: right;
+  text-align: right;
+}
+
+#workskin .li-msg.sent p {
+  background: #0a66c2;
+  color: #fff;
+  border-bottom-right-radius: 4px;
+  text-align: left;
+}
+
+#workskin .li-time {
+  font-size: .75em;
+  margin-left: 8px;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+#workskin .li-msg.received .li-time {
+  color: rgba(0,0,0,.5);
+}
+
+#workskin .li-msg.sent .li-time {
+  color: rgba(255,255,255,.75);
+}
+
+#workskin .li-chat-input {
+  clear: both;
+  padding: 10px 16px;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+#workskin .li-chat-input p {
+  background: #f2f2f2;
+  border-radius: 18px;
+  padding: 8px 14px;
+  font-size: .85em;
+  color: rgba(0,0,0,.45);
+}
+
+#workskin .li-banner {
+  height: 120px;
+  background: linear-gradient(135deg, #0a66c2, #57a3f2);
+}
+
+#workskin .li-banner.b {
+  background: linear-gradient(135deg, #7a3e98, #b57ad1);
+}
+
+#workskin .li-banner.c {
+  background: linear-gradient(135deg, #915907, #d99a2b);
+}
+
+#workskin .li-profile-main {
+  padding: 0 16px 16px;
+  margin-top: -48px;
+}
+
+#workskin .li-profile-main > p:first-child {
+  margin-bottom: 8px;
+}
+
+#workskin .li-profile-main .li-avatar,
+#workskin .li-profile-main .li-avatar-img {
+  border: 4px solid #fff;
+}
+
+#workskin .li-pname {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+#workskin .li-verified {
+  color: #0a66c2;
+}
+
+#workskin .li-pheadline {
+  font-size: .95em;
+}
+
+#workskin .li-plocation,
+#workskin .li-connections {
+  display: block;
+  font-size: .8em;
+  color: rgba(0,0,0,.6);
+  margin-top: 2px;
+}
+
+#workskin .li-plocation a {
+  color: #0a66c2;
+  font-weight: 600;
+}
+
+#workskin .li-profile-main p {
+  line-height: 1.6;
+}
+
+#workskin .li-profile-buttons {
+  margin-top: 12px;
+}
+
+#workskin .li-btn {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 16px;
+  font-weight: 600;
+  font-size: .85em;
+  margin-right: 8px;
+  border: 1px solid #0a66c2;
+  color: #0a66c2;
+}
+
+#workskin .li-btn.primary {
+  background: #0a66c2;
+  color: #fff;
+}
+
+#workskin .li-about,
+#workskin .li-experience {
+  padding: 16px;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+#workskin .li-section-title {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+#workskin .li-about p {
+  font-size: .9em;
+  line-height: 1.4;
+}
+
+#workskin .li-exp-item {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  column-gap: 12px;
+  margin-top: 12px;
+}
+
+#workskin .li-exp-item p {
+  margin: auto 0;
+}
+
+#workskin .li-explogo {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background: #e7e7e7;
+  display: table;
+  text-align: center;
+}
+
+#workskin .li-explogo span {
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: 700;
+  color: rgba(0,0,0,.6);
+}
+
+#workskin .li-exptitle {
+  font-weight: 600;
+  font-size: .9em;
+}
+
+#workskin .li-expcompany,
+#workskin .li-expdate {
+  display: block;
+  font-size: .8em;
+  color: rgba(0,0,0,.6);
+}
