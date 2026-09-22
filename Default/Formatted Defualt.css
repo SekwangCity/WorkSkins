@@ -1,0 +1,32 @@
+/* Contains some formatting to box the whole thing in. Rest is as seen in the original ePUB on Kakaopage except the fonts. */
+#workskin .der-entry {
+  font-family: "Courier Prime", "Courier New", Courier, monospace;
+  margin: 2em auto;
+  max-width: 650px;
+  line-height: 1.5;
+}
+
+#workskin .der-entry p {
+  margin: 0 0 1em 0;
+}
+
+#workskin .der-divider {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+#workskin .der-category {
+  font-size: 80%;
+  text-align: right;
+  margin-bottom: 0.5em;
+}
+
+#workskin .der-title {
+  font-size: 130%;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+#workskin .der-red {
+  color: #ff0000;
+}

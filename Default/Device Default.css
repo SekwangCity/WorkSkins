@@ -1,0 +1,21 @@
+/* Device default skin for DER Wiki entries, not boxed in and exactly as in the original ePUB on Kakaopage except the font. */
+#workskin .der-entry {
+  font-family: "Courier Prime", "Courier New", Courier, monospace;
+}
+
+#workskin .der-divider {
+  text-align: center;
+}
+
+#workskin .der-category {
+  font-size: 80%;
+  text-align: right;
+}
+
+#workskin .der-title {
+  font-size: 130%;
+}
+
+#workskin .der-red {
+  color: #ff0000;
+}
